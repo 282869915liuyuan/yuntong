@@ -1,0 +1,106 @@
+.head{
+    width: 100%;
+    height: 1.28rem;
+    background: #505050;
+    line-height: 1.28rem;
+    text-align: center;
+}
+.head>a{
+    width: .17rem;
+    height: .31rem;
+    position: absolute;
+    left: 0;
+    top:0.087rem;
+}
+div>span{
+    font-size: .36rem;
+    color: #ffffff;
+}
+/*导航*/
+nav{
+    position: relative;
+    background: #ffffff;
+    width: 100%;
+    height: .93rem;
+    line-height: .93rem;
+    border: 1px solid #dddddd;
+}
+nav>b{
+    position: absolute;
+    bottom:0;
+    background: #d44631;
+    width: 3.75rem;
+    height: .05rem;
+}
+.oa{
+    left: 0;
+}
+.ob{
+    display: none;
+    left: 3.75rem;
+}
+nav>p{
+    display: inline-block;
+    height: .93rem;
+    font-size: .32rem;
+}
+.zhong{
+    margin-left: .84rem;
+}
+.bu{
+    margin-left: 2rem;
+}
+.cur>span{
+    font-size: .32rem;
+}
+/*main*/
+main{
+    width: 100%;
+    height: 10.80rem;
+    background: #ffffff;
+    margin-top: .3rem;
+}
+main>.content{
+    margin: .3rem 0rem 0rem .3rem ;
+}
+.content>p{
+    font-size: .28rem;
+}
+.content>.first{
+
+    color: #222222;
+}
+main>.content>.last{
+  color: #999999;
+}
+.b{
+    width: 6.91rem;
+    height: .02rem;
+    background: #dddddd;
+    margin: .27rem .31rem .27rem .28rem;
+}
+.two{
+    width: 100%;
+    height: 10.80rem;
+    background: #ffffff;
+    margin-top: .3rem;
+}
+.two>.content{
+    margin: .3rem 0rem 0rem .3rem ;
+}
+.two>.content>p{
+    font-size: .28rem;
+}
+.two>.content>.first{
+
+    color: #222222;
+}
+.two>.content>.last{
+    color: #999999;
+}
+.b{
+    width: 6.91rem;
+    height: .02rem;
+    background: #dddddd;
+    margin: .27rem .31rem .27rem .28rem;
+}
