@@ -1,23 +1,50 @@
 /**
  * Created by yuanss on 2017/7/19.
  */
+// 今日安排
 ;(function () {
-    var ipt = document.getElementById('ipt');
-    var dpt = document.getElementById('dpt');
-    var oa = document.getElementById('oa');
-    var ob = document.getElementById('ob');
-    var one = document.getElementById('one');
-    var two = document.getElementById('two');
-    ipt.onclick = function () {
-        oa.style.display = one.style.display = 'block';
-        ob.style.display = two.style.display = 'none';
-    };
-    dpt.onclick = function () {
-        ob.style.display = two.style.display = 'block';
-        oa.style.display = one.style.display = 'none';
-    };
+    var navbar=document.getElementsByTagName('nav')[0],
+        oP=navbar.getElementsByTagName('p');
+    $(oP).each(function (index,item) {
+       $(this).on('click',function () {
+           if(index===0){
+               $('#oa').css('display','block').siblings().css('display','none');
+               $('#one').css('display','block').siblings().css('display','none');
+           }else {
+               $('#ob').css('display','block').siblings().css('display','none');
+               $('#two').css('display','block').siblings().css('display','none');
+           }
+       })
+    });
+    var data = null;
     $.ajax({
-        url:'172.18.180.58/bgzs',
-
-    })
+        type : 'get',
+        url  : 'data.txt',
+        async : false,
+        cache : false,
+        dataType : 'json',
+        success : function (res){
+            data = res
+        }
+    });
+    // 绑定数据
+    // if(data && data.length){
+    //     var str = '';
+    //     $.each(data,function (index,item){ // item : data[i]
+    //         str+='<div class="content">';
+    //         str+='<p class="first">';
+    //         str+='<span>'+'·'+'</span>'
+    //         str += '<span>'+item.time+'</span>';
+    //         str+=',';
+    //         str+='<span>'+item.field+'</span>';
+    //         str+='</p>';
+    //         str+='</div>';
+    //         str+='<p class="b"></p>'
+    //     });
+    //     // $('.first').each(function (index,item) {
+    //     //     $(index).html(strTime)
+    //     // })
+    //     $('#one').html(str);
+    //
+    // }
 })();

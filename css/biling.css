@@ -1,0 +1,121 @@
+html,body{
+    overflow-x:hidden ;
+}
+i{
+    font-style: normal;
+}
+input{
+    border: none;
+}
+.biling{
+    width: 100%;
+    height: 1.28rem;
+    background: #505050;
+    line-height: 1.28rem;
+    text-align: center;
+}
+.biling>a{
+    width: .17rem;
+    height: .31rem;
+    position: absolute;
+    left: 0;
+    top:0.087rem;
+}
+div>span{
+    font-size: .36rem;
+    color: #ffffff;
+}
+/*导航*/
+nav{
+    width: 100%;
+    height: .93rem;
+    background: #ffffff;
+    border-bottom: .01rem solid #dddddd;
+    line-height: .93rem;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+nav>span{
+    flex: 3;
+    font-size: .32rem;
+    color: #222222;
+}
+nav{
+
+}
+nav>div>b{
+    position: absolute;
+    bottom:0;
+    background: #d44631;
+    width: 2.5rem;
+    height: .05rem;
+}
+.oa{
+    left: 0;
+}
+.ob{
+    display: none;
+    left: 2.5rem;
+}
+.oc{
+    display: none;
+    left: 5rem;
+}
+/*导航*/
+.bor{
+    width: 100%;
+    background: #f1f1f1;
+    height: .39rem;
+}
+/*主体内容*/
+main{
+    width: 100%;
+    height: 10.89rem;
+    background: #ffffff;
+    white-space: nowrap;
+}
+main::-webkit-scrollbar {
+    /*css3 ::-webkit-scrollbar  处理滚动条整体部分*/
+    display: none;
+}
+main>ul{
+    border-bottom: .03rem solid #dddddd;
+}
+main>ul>.name{
+    margin: .29rem 0 .19rem .3rem;
+    font-size: .28rem;
+    color: #999999;
+}
+main>ul>.details{
+    font-size: .34rem;
+    color: #222222;
+    margin: 0 0 .28rem .3rem;
+
+}
+.c1{
+   display: none;
+}
+.c2{
+    display: none;
+}
+.b1{
+    display: none;
+}
+.b2{
+    display: none;
+}
+.a1{
+    display: none;
+}
+.a2{
+    display: none;
+}
+/*main>b{*/
+    /*width: 7.2rem;*/
+    /*height: .03rem;*/
+    /*background: #dddddd;*/
+    /*margin-left: .3rem ;*/
+    /*display: block;*/
+/*}*/
+/*主体内容*/

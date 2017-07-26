@@ -1,3 +1,7 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
 .head{
     width: 100%;
     height: 1.28rem;
@@ -21,11 +25,11 @@ nav{
     position: relative;
     background: #ffffff;
     width: 100%;
-    height: .93rem;
-    line-height: .93rem;
-    border: 1px solid #dddddd;
+    height: .91rem;
+    line-height: .91rem;
+    border-bottom:.01rem  solid #dddddd;
 }
-nav>b{
+nav>div>b{
     position: absolute;
     bottom:0;
     background: #d44631;
@@ -61,13 +65,18 @@ main{
     margin-top: .3rem;
 }
 main>.content{
-    margin: .3rem 0rem 0rem .3rem ;
+    width: 6.9rem;
+    margin: .3rem .3rem 0rem .3rem ;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+
 }
 .content>p{
     font-size: .28rem;
 }
-.content>.first{
 
+.content>.first{
     color: #222222;
 }
 main>.content>.last{
@@ -78,6 +87,7 @@ main>.content>.last{
     height: .02rem;
     background: #dddddd;
     margin: .27rem .31rem .27rem .28rem;
+    visibility: hidden;
 }
 .two{
     width: 100%;
